@@ -1,0 +1,316 @@
+body{
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: normal;
+}
+$gradient: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+$green_color: #8DD83D;
+$white_color: #FFFFFF;
+$grey_color: #435766;
+
+/*banner carusel*/
+.carusel {
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+.starwars {
+    background-image: url("../img/Star-Wars-Battlefront-II-combat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    .green_btn {
+      padding: 8px 19px;
+    }
+  }
+  .CoD {
+    background-image: url("../img/CoD-WWII.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center top;
+    overflow: hidden;
+    .grey_btn{
+      padding: 8px 29px;
+    }
+  }
+  .owl-carousel {
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      .owl-next, .owl-prev {
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        color: $green_color;
+      }
+      .owl-prev {
+        &:before {
+          content: "\f053";
+          position: absolute;
+          top: 50%;
+          left: 57px;
+        }
+      }
+      .owl-next {
+        &:before {
+          content: "\f054";
+          position: absolute;
+          top: 50%;
+          right: 57px;
+        }
+      }
+    }
+  }
+}
+
+/*header*/
+header{
+  background-color: #373A3C;
+}
+.navbar-light {
+  .navbar-nav {
+    .active {
+      > .nav-link {
+        color: $white_color;
+      }
+    }
+    .nav-link {
+      color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        color: $white_color;
+      }
+    }
+    .dropdown-item{
+      &.active{
+        color: $green_color;
+        background: $gradient;
+      }
+    }
+    .dropdown-toggle {
+      &:after {
+        content: "\f078";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        color: $green_color;
+        border: none;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+      &.acc:before {
+        content: "\f0c0";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        color: $green_color;
+        border: none;
+      }
+    }
+  }
+}
+
+/*best value section*/
+.value{
+  background: $gradient;
+  h2{
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .card{
+    h5{
+      font-size: 18px;
+      line-height: 21px;
+      color: $grey_color;
+    }
+    p{
+      font-size: 19px;
+      line-height: 21px;
+      color: $grey_color;
+    }
+    .Cod_logo{
+      height: 197px;
+    }
+  }
+}
+
+/*Exclusive games*/
+.games {
+  background-image: url("../img/CoD-WWII.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  h3{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .grey_btn{
+    padding: 20px 47px;
+  }
+  .card{
+    h5{
+      font-size: 18px;
+      line-height: 21px;
+      color: $grey_color;
+    }
+    p{
+      font-size: 17px;
+      line-height: 24px;
+      color: $grey_color;
+    }
+    .Cod_logo{
+      height: 182px;
+    }
+    .grow {
+      transition: all .2s ease-in-out;
+    }
+    .grow:hover {
+      transform: scale(1.1);
+    }
+    .owl-stage-outer {
+      padding: 10px;
+    }
+  }
+}
+/*Xbox Design Lab Section*/
+.xbox_design_lab{
+  background-image: url("../img/DesignLabSection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  h2{
+    font-size: 48px;
+    line-height: 56px;
+  }
+  p{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .grey_btn{
+    padding: 20px 52px;
+  }
+  .green_btn{
+    padding: 20px 23px;
+  }
+}
+/*end Xbox Design Lab Section*/
+
+/*footer*/
+footer{
+  background-color: #373A3C;
+  h3{
+    color: $green_color;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+  ul{
+    li{
+      font-size: 14px;
+      a{
+        text-decoration: none;
+        color: $white_color;
+        transition: 0.2s;
+        &:hover{
+          color: $green_color;
+          text-decoration: none;
+        }
+        i{
+          font-size: 20px;
+          color: $green_color;
+          transition: 0.2s;
+          &:hover{
+            color: $white_color;
+          }
+        }
+      }
+    }
+  }
+  a{
+    color: $white_color;
+    transition: 0.2s;
+    &:hover{
+      color: $green_color;
+      text-decoration: none;
+    }
+  }
+}
+/*end_footer*/
+
+/*game ditails page*/
+.CoD_game{
+  background-image: url("../img/CoD-WWII.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h2{
+    font-size: 36px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+.Cod_title{
+  h1{
+    font-size: 36px;
+    color: $grey_color;
+  }
+}
+.content{
+  h3{
+    font-size: 36px;
+    line-height: 42px;
+    color: $grey_color
+  }
+}
+#tech_spec {
+  h3{
+    font-size: 36px;
+    color: $grey_color;
+  }
+  .Cod_text{
+    font-size: 21px;
+    line-height: 24px;
+    color: $grey_color;
+  }
+}
+/*btns*/
+.green_btn{
+  background-color: $green_color;
+  font-size: 16px;
+  line-height: 21px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.01s;
+  &:hover{
+    background: $gradient;
+  }
+}
+.grey_btn{
+  background:$gradient;
+  font-size: 16px;
+  line-height: 21px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.01s;
+  &:hover{
+    background: $green_color;
+  }
+}
+
+
